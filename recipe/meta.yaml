@@ -1,5 +1,5 @@
 {% set name = "xpublish-edr" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xpublish_edr-{{ version }}.tar.gz
-  sha256: 1bdf05b5e23fa8d531ba24eaeb52da1b1f0e42fabfbeaebd109b8ba82addbe8d
+  sha256: cbb9c01b46fb3b97a8f0a7d9fce75822a0b3cb15f25d0afac7c7a49b8cd21b08
 
 build:
   noarch: python
