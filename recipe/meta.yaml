@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xpublish_edr-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xpublish_edr-{{ version }}.tar.gz
   sha256: cbb9c01b46fb3b97a8f0a7d9fce75822a0b3cb15f25d0afac7c7a49b8cd21b08
 
 build:
@@ -16,13 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=61
     - wheel
     - setuptools-scm >=3.4
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
+    - scipy
     - shapely
     - xarray
     - xpublish <0.4.0,>=0.3.0
