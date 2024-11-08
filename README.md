@@ -144,4 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@abkfenris](https://github.com/abkfenris/)
+* [@jhamman](https://github.com/jhamman/)
+* [@mpiannucci](https://github.com/mpiannucci/)
 
